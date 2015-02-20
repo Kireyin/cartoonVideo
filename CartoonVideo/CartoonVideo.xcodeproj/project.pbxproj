@@ -13,9 +13,9 @@
 		9F0C6EF31A7A633900B0BAA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C6EF21A7A633900B0BAA2 /* Images.xcassets */; };
 		9F0C6EF61A7A633900B0BAA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C6EF41A7A633900B0BAA2 /* LaunchScreen.xib */; };
 		9F0C6F021A7A633900B0BAA2 /* CartoonVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C6F011A7A633900B0BAA2 /* CartoonVideoTests.swift */; };
-		9F0C6F181A7A641100B0BAA2 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F0C6F141A7A639900B0BAA2 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F0C6F1A1A7A645A00B0BAA2 /* DSC_0182.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C6F191A7A645A00B0BAA2 /* DSC_0182.jpg */; };
-		9F0C6F1C1A7A697E00B0BAA2 /* IMG_1077.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C6F1B1A7A697E00B0BAA2 /* IMG_1077.jpg */; };
+		9F40F0DE1A962788007C7FC7 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F40F0DA1A962735007C7FC7 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F40F0E01A963B0D007C7FC7 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40F0DF1A963B0D007C7FC7 /* Effect.swift */; };
+		9F40F0E21A9653D6007C7FC7 /* ViewController in Resources */ = {isa = PBXBuildFile; fileRef = 9F40F0E11A9653D6007C7FC7 /* ViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,23 +26,23 @@
 			remoteGlobalIDString = 9F0C6EE51A7A633900B0BAA2;
 			remoteInfo = CartoonVideo;
 		};
-		9F0C6F111A7A639900B0BAA2 /* PBXContainerItemProxy */ = {
+		9F40F0D71A962735007C7FC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F0C6F0B1A7A639900B0BAA2 /* GPUImage.xcodeproj */;
+			containerPortal = 9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
 			remoteInfo = GPUImage;
 		};
-		9F0C6F131A7A639900B0BAA2 /* PBXContainerItemProxy */ = {
+		9F40F0D91A962735007C7FC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F0C6F0B1A7A639900B0BAA2 /* GPUImage.xcodeproj */;
+			containerPortal = 9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BCE209E51943F20C002FEED8;
 			remoteInfo = GPUImageFramework;
 		};
-		9F0C6F151A7A63C200B0BAA2 /* PBXContainerItemProxy */ = {
+		9F40F0DB1A962762007C7FC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9F0C6F0B1A7A639900B0BAA2 /* GPUImage.xcodeproj */;
+			containerPortal = 9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = BCE209E41943F20C002FEED8;
 			remoteInfo = GPUImageFramework;
@@ -50,13 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9F0C6F171A7A63EE00B0BAA2 /* CopyFiles */ = {
+		9F40F0DD1A962779007C7FC7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F0C6F181A7A641100B0BAA2 /* GPUImage.framework in CopyFiles */,
+				9F40F0DE1A962788007C7FC7 /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +73,9 @@
 		9F0C6EFB1A7A633900B0BAA2 /* CartoonVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartoonVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0C6F001A7A633900B0BAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0C6F011A7A633900B0BAA2 /* CartoonVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoonVideoTests.swift; sourceTree = "<group>"; };
-		9F0C6F0B1A7A639900B0BAA2 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../../Downloads/GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
-		9F0C6F191A7A645A00B0BAA2 /* DSC_0182.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC_0182.jpg; sourceTree = "<group>"; };
-		9F0C6F1B1A7A697E00B0BAA2 /* IMG_1077.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1077.jpg; sourceTree = "<group>"; };
+		9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		9F40F0DF1A963B0D007C7FC7 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		9F40F0E11A9653D6007C7FC7 /* ViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ViewController; path = ../../../../../Dropbox/ViewController; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		9F0C6EDD1A7A633900B0BAA2 = {
 			isa = PBXGroup;
 			children = (
-				9F0C6F0B1A7A639900B0BAA2 /* GPUImage.xcodeproj */,
+				9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */,
 				9F0C6EE81A7A633900B0BAA2 /* CartoonVideo */,
 				9F0C6EFE1A7A633900B0BAA2 /* CartoonVideoTests */,
 				9F0C6EE71A7A633900B0BAA2 /* Products */,
@@ -120,11 +120,11 @@
 			children = (
 				9F0C6EEB1A7A633900B0BAA2 /* AppDelegate.swift */,
 				9F0C6EED1A7A633900B0BAA2 /* ViewController.swift */,
+				9F40F0E11A9653D6007C7FC7 /* ViewController */,
+				9F40F0DF1A963B0D007C7FC7 /* Effect.swift */,
 				9F0C6EEF1A7A633900B0BAA2 /* Main.storyboard */,
 				9F0C6EF21A7A633900B0BAA2 /* Images.xcassets */,
 				9F0C6EF41A7A633900B0BAA2 /* LaunchScreen.xib */,
-				9F0C6F191A7A645A00B0BAA2 /* DSC_0182.jpg */,
-				9F0C6F1B1A7A697E00B0BAA2 /* IMG_1077.jpg */,
 				9F0C6EE91A7A633900B0BAA2 /* Supporting Files */,
 			);
 			path = CartoonVideo;
@@ -155,11 +155,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9F0C6F0C1A7A639900B0BAA2 /* Products */ = {
+		9F40F0D21A962734007C7FC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F0C6F121A7A639900B0BAA2 /* libGPUImage.a */,
-				9F0C6F141A7A639900B0BAA2 /* GPUImage.framework */,
+				9F40F0D81A962735007C7FC7 /* libGPUImage.a */,
+				9F40F0DA1A962735007C7FC7 /* GPUImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,12 +174,12 @@
 				9F0C6EE21A7A633900B0BAA2 /* Sources */,
 				9F0C6EE31A7A633900B0BAA2 /* Frameworks */,
 				9F0C6EE41A7A633900B0BAA2 /* Resources */,
-				9F0C6F171A7A63EE00B0BAA2 /* CopyFiles */,
+				9F40F0DD1A962779007C7FC7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F0C6F161A7A63C200B0BAA2 /* PBXTargetDependency */,
+				9F40F0DC1A962762007C7FC7 /* PBXTargetDependency */,
 			);
 			name = CartoonVideo;
 			productName = CartoonVideo;
@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					9F0C6EE51A7A633900B0BAA2 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = RMM2MT8JWE;
 					};
 					9F0C6EFA1A7A633900B0BAA2 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -235,8 +236,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9F0C6F0C1A7A639900B0BAA2 /* Products */;
-					ProjectRef = 9F0C6F0B1A7A639900B0BAA2 /* GPUImage.xcodeproj */;
+					ProductGroup = 9F40F0D21A962734007C7FC7 /* Products */;
+					ProjectRef = 9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -248,18 +249,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9F0C6F121A7A639900B0BAA2 /* libGPUImage.a */ = {
+		9F40F0D81A962735007C7FC7 /* libGPUImage.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGPUImage.a;
-			remoteRef = 9F0C6F111A7A639900B0BAA2 /* PBXContainerItemProxy */;
+			remoteRef = 9F40F0D71A962735007C7FC7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9F0C6F141A7A639900B0BAA2 /* GPUImage.framework */ = {
+		9F40F0DA1A962735007C7FC7 /* GPUImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GPUImage.framework;
-			remoteRef = 9F0C6F131A7A639900B0BAA2 /* PBXContainerItemProxy */;
+			remoteRef = 9F40F0D91A962735007C7FC7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -270,10 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F0C6EF11A7A633900B0BAA2 /* Main.storyboard in Resources */,
-				9F0C6F1C1A7A697E00B0BAA2 /* IMG_1077.jpg in Resources */,
+				9F40F0E21A9653D6007C7FC7 /* ViewController in Resources */,
 				9F0C6EF61A7A633900B0BAA2 /* LaunchScreen.xib in Resources */,
 				9F0C6EF31A7A633900B0BAA2 /* Images.xcassets in Resources */,
-				9F0C6F1A1A7A645A00B0BAA2 /* DSC_0182.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F40F0E01A963B0D007C7FC7 /* Effect.swift in Sources */,
 				9F0C6EEE1A7A633900B0BAA2 /* ViewController.swift in Sources */,
 				9F0C6EEC1A7A633900B0BAA2 /* AppDelegate.swift in Sources */,
 			);
@@ -312,10 +313,10 @@
 			target = 9F0C6EE51A7A633900B0BAA2 /* CartoonVideo */;
 			targetProxy = 9F0C6EFC1A7A633900B0BAA2 /* PBXContainerItemProxy */;
 		};
-		9F0C6F161A7A63C200B0BAA2 /* PBXTargetDependency */ = {
+		9F40F0DC1A962762007C7FC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GPUImageFramework;
-			targetProxy = 9F0C6F151A7A63C200B0BAA2 /* PBXContainerItemProxy */;
+			targetProxy = 9F40F0DB1A962762007C7FC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -422,7 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CartoonVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CartoonVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
