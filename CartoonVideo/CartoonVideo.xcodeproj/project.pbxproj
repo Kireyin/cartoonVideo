@@ -16,6 +16,8 @@
 		9F40F0DE1A962788007C7FC7 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F40F0DA1A962735007C7FC7 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F40F0E01A963B0D007C7FC7 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F40F0DF1A963B0D007C7FC7 /* Effect.swift */; };
 		9F40F0E21A9653D6007C7FC7 /* ViewController in Resources */ = {isa = PBXBuildFile; fileRef = 9F40F0E11A9653D6007C7FC7 /* ViewController */; };
+		9F819B3D1A97EC0900C9F2EC /* mzl.jxidcxos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F819B3C1A97EC0900C9F2EC /* mzl.jxidcxos.png */; };
+		9FF324591A99027700F58142 /* AKPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF324581A99027700F58142 /* AKPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		9F40F0D11A962734007C7FC7 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		9F40F0DF1A963B0D007C7FC7 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		9F40F0E11A9653D6007C7FC7 /* ViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ViewController; path = ../../../../../Dropbox/ViewController; sourceTree = "<group>"; };
+		9F819B3C1A97EC0900C9F2EC /* mzl.jxidcxos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mzl.jxidcxos.png; sourceTree = "<group>"; };
+		9FF324581A99027700F58142 /* AKPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		9F0C6EE81A7A633900B0BAA2 /* CartoonVideo */ = {
 			isa = PBXGroup;
 			children = (
+				9FF324581A99027700F58142 /* AKPickerView.swift */,
 				9F0C6EEB1A7A633900B0BAA2 /* AppDelegate.swift */,
 				9F0C6EED1A7A633900B0BAA2 /* ViewController.swift */,
 				9F40F0E11A9653D6007C7FC7 /* ViewController */,
@@ -125,6 +130,7 @@
 				9F0C6EEF1A7A633900B0BAA2 /* Main.storyboard */,
 				9F0C6EF21A7A633900B0BAA2 /* Images.xcassets */,
 				9F0C6EF41A7A633900B0BAA2 /* LaunchScreen.xib */,
+				9F819B3C1A97EC0900C9F2EC /* mzl.jxidcxos.png */,
 				9F0C6EE91A7A633900B0BAA2 /* Supporting Files */,
 			);
 			path = CartoonVideo;
@@ -272,6 +278,7 @@
 			files = (
 				9F0C6EF11A7A633900B0BAA2 /* Main.storyboard in Resources */,
 				9F40F0E21A9653D6007C7FC7 /* ViewController in Resources */,
+				9F819B3D1A97EC0900C9F2EC /* mzl.jxidcxos.png in Resources */,
 				9F0C6EF61A7A633900B0BAA2 /* LaunchScreen.xib in Resources */,
 				9F0C6EF31A7A633900B0BAA2 /* Images.xcassets in Resources */,
 			);
@@ -293,6 +300,7 @@
 			files = (
 				9F40F0E01A963B0D007C7FC7 /* Effect.swift in Sources */,
 				9F0C6EEE1A7A633900B0BAA2 /* ViewController.swift in Sources */,
+				9FF324591A99027700F58142 /* AKPickerView.swift in Sources */,
 				9F0C6EEC1A7A633900B0BAA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
