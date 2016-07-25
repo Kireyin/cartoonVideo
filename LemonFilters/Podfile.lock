@@ -1,0 +1,13 @@
+PODS:
+  - AKPickerView-Swift (0.2.1)
+  - GPUImage (0.1.6)
+
+DEPENDENCIES:
+  - AKPickerView-Swift
+  - GPUImage
+
+SPEC CHECKSUMS:
+  AKPickerView-Swift: 7989ebd544dc2adcbb56ffd48bbb8d3c3ea2d71d
+  GPUImage: 4675ce4a5370ca92fcea8623b2a08b8f0c51b940
+
+COCOAPODS: 0.37.2

@@ -107,11 +107,11 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
         camera.horizontallyMirrorFrontFacingCamera = true //FOR A MORE NATURAL FEELING
         
         //GETTING LAST TAKEN PIC IN THE LIBRARY
-        var fetchOptions: PHFetchOptions = PHFetchOptions()
+        let fetchOptions: PHFetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-        var fetchResult = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
+        let fetchResult = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
         if (fetchResult.lastObject != nil) {
-            var lastAsset: PHAsset = fetchResult.lastObject as PHAsset
+            let lastAsset: PHAsset = fetchResult.lastObject as! PHAsset
             PHImageManager.defaultManager().requestImageForAsset(lastAsset, targetSize: self.img_imageLibrary.bounds.size, contentMode: PHImageContentMode.AspectFill, options: PHImageRequestOptions(), resultHandler: { (result, info) -> Void in
                 self.img_imageLibrary.image = result
             })
@@ -120,7 +120,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     }
     
     override func viewDidAppear(animated: Bool) {
-        setUIForShootingMode(animationDuration: 0.0)
+        setUIForShootingMode(0.0)
         camera.startCameraCapture()
     }
     
@@ -227,12 +227,18 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
     @IBAction func btn_clicked_flash(sender: AnyObject) {
         let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         if device.hasTorch {
-            device.lockForConfiguration(nil)
+            do {
+                try device.lockForConfiguration()
+            } catch _ {
+            }
             if (device.torchMode == AVCaptureTorchMode.On) {
                 device.torchMode = AVCaptureTorchMode.Off
                 btn_flash.setTitle("Off", forState: .Normal)
             } else {
-                device.setTorchModeOnWithLevel(1.0, error: nil)
+                do {
+                    try device.setTorchModeOnWithLevel(1.0)
+                } catch _ {
+                }
                 btn_flash.setTitle("On", forState: .Normal)
             }
             device.unlockForConfiguration()
@@ -258,7 +264,7 @@ class ViewController: UIViewController, AKPickerViewDelegate, AKPickerViewDataSo
             imageView.image = capturedImage
             self.view.addSubview(imageView)
             
-            UIView.animateWithDuration(0.2, delay: 0.4, options: nil, animations: {_ in
+            UIView.animateWithDuration(0.2, delay: 0.4, options: [], animations: {_ in
                 imageView.frame.size = self.img_imageLibrary.frame.size
                 imageView.frame.origin = CGPointMake(self.view_footer.frame.origin.x + self.img_imageLibrary.frame.origin.x, self.view_footer.frame.origin.y + self.img_imageLibrary.frame.origin.y)
                 }, completion: {_ in

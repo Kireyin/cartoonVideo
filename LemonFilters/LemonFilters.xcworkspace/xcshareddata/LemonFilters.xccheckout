@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C332B378-DA4A-47EF-BC7D-4B0E9632213B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LemonFilters</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E78682E1644539621668ECDFEB972BE6D75A2DFC</key>
+		<string>https://github.com/Kireyin/cartoonVideo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LemonFilters/LemonFilters.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E78682E1644539621668ECDFEB972BE6D75A2DFC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kireyin/cartoonVideo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E78682E1644539621668ECDFEB972BE6D75A2DFC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E78682E1644539621668ECDFEB972BE6D75A2DFC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cartoonVideo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

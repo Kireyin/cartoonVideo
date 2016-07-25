@@ -1,0 +1,19 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'GPUImage'
+pod 'AKPickerView-Swift'
+
+target 'LemonFilters' do
+
+end
+
+target 'LemonFiltersTests' do
+
+end
+
+target 'LemonFiltersUITests' do
+
+end
+
