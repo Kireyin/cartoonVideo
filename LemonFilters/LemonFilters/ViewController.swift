@@ -137,7 +137,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        setUIForShootingMode(animationDuration: 0.0)
+        setUIForShootingMode(0.0)
         camera.startCameraCapture()
     }
     
@@ -244,15 +244,17 @@ class ViewController: UIViewController {
     @IBAction func btn_clicked_flash(sender: AnyObject) {
         let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         if device.hasTorch {
-            device.lockForConfiguration(NSErrorPointer())
+         do {
+          try device.lockForConfiguration()
             if (device.torchMode == AVCaptureTorchMode.On) {
                 device.torchMode = AVCaptureTorchMode.Off
                 btn_flash.setTitle("Off", forState: .Normal)
             } else {
-                device.setTorchModeOnWithLevel(1.0, error: NSErrorPointer())
+                try device.setTorchModeOnWithLevel(1.0)
                 btn_flash.setTitle("On", forState: .Normal)
             }
             device.unlockForConfiguration()
+         } catch {}
         }
     }
     
@@ -275,7 +277,7 @@ class ViewController: UIViewController {
             imageView.image = capturedImage
             self.view.addSubview(imageView)
             
-            UIView.animateWithDuration(0.2, delay: 0.4, options: nil, animations: {_ in
+            UIView.animateWithDuration(0.2, delay: 0.4, options: [], animations: {_ in
                 imageView.frame.size = self.img_imageLibrary.frame.size
                 imageView.frame.origin = CGPointMake(self.view_footer.frame.origin.x + self.img_imageLibrary.frame.origin.x, self.view_footer.frame.origin.y + self.img_imageLibrary.frame.origin.y)
                 }, completion: {_ in

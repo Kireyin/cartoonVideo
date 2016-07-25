@@ -1,6 +1,0 @@
-framework module AKPickerView_Swift {
-  umbrella header "Pods-LemonFiltersTests-AKPickerView-Swift-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -82,17 +82,13 @@ private class AKCollectionViewCell: UICollectionViewCell {
 		self.label.lineBreakMode = .ByTruncatingTail
 		self.label.highlightedTextColor = UIColor.blackColor()
 		self.label.font = self.font
-		self.label.autoresizingMask =
-			.FlexibleTopMargin |
-			.FlexibleLeftMargin |
-			.FlexibleBottomMargin |
-			.FlexibleRightMargin;
+		self.label.autoresizingMask = [.FlexibleTopMargin, .FlexibleLeftMargin, .FlexibleBottomMargin, .FlexibleRightMargin]
 		self.contentView.addSubview(self.label)
 
 		self.imageView = UIImageView(frame: self.contentView.bounds)
 		self.imageView.backgroundColor = UIColor.clearColor()
 		self.imageView.contentMode = .Center
-		self.imageView.autoresizingMask = .FlexibleWidth | .FlexibleHeight;
+		self.imageView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
 		self.contentView.addSubview(self.imageView)
 	}
 
@@ -107,7 +103,7 @@ private class AKCollectionViewCell: UICollectionViewCell {
 	}
 
 	required init(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
+		super.init(coder: aDecoder)!
 		self.initialize()
 	}
 }
@@ -134,7 +130,7 @@ private class AKCollectionViewLayout: UICollectionViewFlowLayout {
 	}
 
 	required init(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
+		super.init(coder: aDecoder)!
 		self.initialize()
 	}
 
@@ -155,19 +151,19 @@ private class AKCollectionViewLayout: UICollectionViewFlowLayout {
 		case .Flat:
 			return attributes
 		case .Wheel:
-			let distance = CGRectGetMidX(attributes.frame) - self.midX;
+			let distance = CGRectGetMidX(attributes!.frame) - self.midX;
 			let currentAngle = self.maxAngle * distance / self.width / CGFloat(M_PI_2);
 			var transform = CATransform3DIdentity;
 			transform = CATransform3DTranslate(transform, -distance, 0, -self.width);
 			transform = CATransform3DRotate(transform, currentAngle, 0, 1, 0);
 			transform = CATransform3DTranslate(transform, 0, 0, self.width);
-			attributes.transform3D = transform;
-			attributes.alpha = fabs(currentAngle) < self.maxAngle ? 1.0 : 0.0;
+			attributes!.transform3D = transform;
+			attributes!.alpha = fabs(currentAngle) < self.maxAngle ? 1.0 : 0.0;
 			return attributes;
 		}
 	}
 
-	private override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
+	private func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
 		switch self.delegate.pickerViewStyleForCollectionViewLayout(self) {
 		case .Flat:
 			return super.layoutAttributesForElementsInRect(rect)
@@ -312,7 +308,7 @@ public class AKPickerView: UIView, UICollectionViewDataSource, UICollectionViewD
 		self.collectionView.showsHorizontalScrollIndicator = false
 		self.collectionView.backgroundColor = UIColor.clearColor()
 		self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast
-		self.collectionView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+		self.collectionView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
 		self.collectionView.dataSource = self
 		self.collectionView.registerClass(
 			AKCollectionViewCell.self,
@@ -336,7 +332,7 @@ public class AKPickerView: UIView, UICollectionViewDataSource, UICollectionViewD
 	}
 
 	public required init(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
+		super.init(coder: aDecoder)!
 		self.initialize()
 	}
 

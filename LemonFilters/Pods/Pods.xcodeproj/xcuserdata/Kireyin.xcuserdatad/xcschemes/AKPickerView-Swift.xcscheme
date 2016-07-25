@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3FBA6D201D89B1152A887C1576D4DFAB"
-               BuildableName = "Pods_LemonFilters.framework"
-               BlueprintName = "Pods-LemonFilters"
+               BlueprintIdentifier = "7EC1417298041145E9B1A4C7B395C179"
+               BuildableName = "AKPickerView_Swift.framework"
+               BlueprintName = "AKPickerView-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3FBA6D201D89B1152A887C1576D4DFAB"
-            BuildableName = "Pods_LemonFilters.framework"
-            BlueprintName = "Pods-LemonFilters"
+            BlueprintIdentifier = "7EC1417298041145E9B1A4C7B395C179"
+            BuildableName = "AKPickerView_Swift.framework"
+            BlueprintName = "AKPickerView-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
